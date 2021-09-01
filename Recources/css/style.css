@@ -266,7 +266,7 @@ nav ul{
     }
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 420px){
     .logo-full{
         display: none;
     }
@@ -287,6 +287,20 @@ nav ul{
 
     .projects a:hover{
         width: 83%;
+    }
+    
+}
+
+@media screen and (max-height: 700px){
+    .info-card{
+        height: 80%;
+        margin: 0;
+        justify-content: baseline;
+    }
+
+    .laptop{
+        padding-top: 5rem;
+        align-items: center;
     }
     
 }
