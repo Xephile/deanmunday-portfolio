@@ -101,6 +101,7 @@ nav ul{
 .my-story{
     width: 90%;
     margin: 5%;
+    margin-bottom: 2rem;
     padding-top: 2rem;
     border-top: 1px solid rgb(148, 148, 148);
     color: black;
@@ -178,8 +179,6 @@ nav ul{
 
 .my-projects{
     width: 90%;
-    margin: 5%;
-    margin-bottom: 2rem;
     padding-top: 2rem;
     border-top: 1px solid rgb(148, 148, 148);
     color: black;
