@@ -105,7 +105,12 @@ nav ul {
 }
 
 .my-story-content {
-    display: inline-flex;
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
 }
 
 .my-story h2 {
@@ -117,49 +122,69 @@ nav ul {
     font-size: 1.3rem;
 }
 
-.my-skills {
+#my-skills {
     margin-left: 1rem;
-    width: 80%;
+    width: 50%;
     height: fit-content;
     background-color: rgba(190, 190, 190, 0.404);
     border-radius: 1rem;
     text-align: center;
-}
-
-.skills-img {
-    display: flex;
-    justify-content: space-evenly;
+    padding-bottom: 1rem;
 }
 
 .my-skills h3 {
     margin: 1rem 0rem;
 }
 
-.my-skills img {
-    width: 3rem;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
-}
 
 /* Projects */
 .projects {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
+    width: 90%;
+    justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    margin: 5%;
 }
 
-
-.projects a {
-    width: 40%;
-    transition: width 0.3s, height 0.3s, border-radius 0.3s;
+.project-item {
+    display: flex;
+    width: 30%;
+    height: 40vh;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin: 1rem;
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    transition-property: all;
+    transition-duration: 0.3s;
+    letter-spacing: 0.1rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.493);
 }
 
-.projects a:hover {
-    width: 43%;
-    height: auto;
-    border-radius: 3rem;
+.project-item h3 {
+    font-size: 200%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 1rem;
+}
+
+.project-item:hover {
+    transform: scale(1.05, 1.05);
+    transition: all;
+    border-radius: 2.5rem;
+    color: white;
+    letter-spacing: 0.15rem;
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 
 .project-thumbnail {
@@ -170,7 +195,7 @@ nav ul {
 }
 
 .my-projects {
-    width: 90%;
+    width: 100%;
     padding-top: 2rem;
     border-top: 1px solid rgb(148, 148, 148);
     color: black;
@@ -230,23 +255,14 @@ nav ul {
         margin: 0;
     }
 
-    .project-thumbnail {
-        padding: 0;
-        margin: 0;
-    }
-
     .projects {
         align-items: center;
     }
 
     .projects a {
         margin-bottom: 2rem;
-        width: 80%;
+        width: 100%;
 
-    }
-
-    .projects a:hover {
-        width: 83%;
     }
 
     .my-projects {
@@ -264,19 +280,21 @@ nav ul {
         display: inline-flex;
     }
 
+    .projects {
+        justify-content: center;
+    }
+
     .projects a {
         margin-bottom: 2rem;
         width: 80%;
     }
 
-    .project-thumbnail {
+    .project-item {
         padding: 0;
         margin: 0;
+        width: 100%;
     }
 
-    .projects a:hover {
-        width: 83%;
-    }
 
 }
 

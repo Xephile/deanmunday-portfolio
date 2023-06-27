@@ -1,29 +1,19 @@
-import Hero from './components/Hero';
-import Story from './components/Story';
-import Projects from './components/Projects';
-import { useMediaQuery } from 'react-responsive';
-import { useEffect } from 'react';
-import MobileNav from './components/MobileNav';
-import NavbarList from './components/Lists/NavbarList';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import CardServicing from './components/Projects/ProjectItems/CardServicing';
+import urls from './routes/routes.urls';
 
 
 const App = () => {
-  const isDesktop = useMediaQuery({
-    query: "(min-width: 1224px)"
-  });
-
-  const isMobile = useMediaQuery({
-    query: "(max-width: 786px)"
-  });
-
-  useEffect(() => {
-  }, [isDesktop])
 
   return <>
-    <MobileNav isMobile={isMobile} />
-    <Hero />
-    <Story />
-    <Projects />
+    <BrowserRouter>
+      <Routes>
+        <Route path={urls.HOME} element={<Home />} />
+        <Route path={urls.CARD_SERVICING} element={<CardServicing />} />
+        <Route path={urls.TEMP_ROUTE} element={<CardServicing />} />
+      </Routes>
+    </BrowserRouter>
   </>;
 }
 

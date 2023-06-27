@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import smallLogo from '../images/DM.png'
 import logo from "../images/Dean-Munday.png";
 import BurgerMenu from './BurgerMenu';
-import burgerMenu from '../images/burgermenu.png';
+import burgerMenu from '../images/icons/burgermenu.png';
 import NavbarList from './Lists/NavbarList';
 
 const MobileNav = (props: any) => {
